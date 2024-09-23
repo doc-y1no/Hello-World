@@ -1,0 +1,13 @@
+# まだコミットされていないファイルを確認する
+$ git status
+  ...
+  modified: credentials.yml.enc
+
+# コミットに含めるファイルを指定する
+$ git add config/credentials.yml.enc
+
+# 先ほど指定したファイルをコミットする
+$ git commit -m "Update credentials"
+
+# main ブランチにコミットされたファイルを GitHub (origin) に送る
+$ git push origin main
